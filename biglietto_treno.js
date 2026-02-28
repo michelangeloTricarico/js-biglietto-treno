@@ -17,8 +17,8 @@ per controllare che la vostra logica sui prezzi funzioni correttamente, provate 
 100km, 70 anni => prezzo corretto: €12.60
 */
 
-let km_number = 100 // variable for number of km
-let age_passeger = 70// passenger age to verify if a reduction will be applied
+const km_number =parseInt(prompt("Type km required")) // variable for number of km
+const age_passeger = parseInt(prompt("Type passenger age")) // passenger age to verify if a reduction will be applied
 let cost  // initialization variable for cost
 
 // check if a reduction can be applied  
@@ -31,6 +31,5 @@ else if (age_passeger>=65){
 else {
     cost=(km_number * 0.21)
 }
-
 
 console.log("€"+cost.toFixed(2)) //to print output
