@@ -8,7 +8,7 @@ const num_type =(prompt("Type 'pari' or 'dispari'")).toUpperCase()
 const num_input = parseInt(prompt("Type a number between 1 and 9"))
 
 // Number extraction
-const num_extracted = 5 //Math.floor(Math.random() * 9) + 1 // Math.random give a number 0 ≤ x < 1, Math.floor round down (to pass from a float to a int)
+const num_extracted = Math.floor(Math.random() * 9) + 1 // Math.random give a number 0 ≤ x < 1, Math.floor round down (to pass from a float to a int)
 console.log("Number extracted: "+num_extracted)
 
 // Sum number extracted with number in input
